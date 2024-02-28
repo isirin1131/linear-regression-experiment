@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9efea0b-5bbf-4a51-9a32-273264b8c7c8" name="Changes" comment="test2">
-      <change afterPath="$PROJECT_DIR$/who is faster/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+    <list default="true" id="b9efea0b-5bbf-4a51-9a32-273264b8c7c8" name="Changes" comment="comments updated">
+      <change afterPath="$PROJECT_DIR$/theory.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +46,9 @@
         <option name="url" value="https://github.com/isirin1131/linear-regression-experiment.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -129,12 +130,48 @@
       <option name="project" value="LOCAL" />
       <updated>1709090262447</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="created &quot;who is faster&quot;">
+      <option name="closed" value="true" />
+      <created>1709113287277</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709113287277</updated>
+    </task>
+    <task id="LOCAL-00004" summary="bug fixed">
+      <option name="closed" value="true" />
+      <created>1709113418693</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709113418693</updated>
+    </task>
+    <task id="LOCAL-00005" summary="test for matplotlib">
+      <option name="closed" value="true" />
+      <created>1709115962255</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709115962255</updated>
+    </task>
+    <task id="LOCAL-00006" summary="comments updated">
+      <option name="closed" value="true" />
+      <created>1709116136524</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709116136524</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="just create prj" />
     <MESSAGE value="test2" />
-    <option name="LAST_COMMIT_MESSAGE" value="test2" />
+    <MESSAGE value="created &quot;who is faster&quot;" />
+    <MESSAGE value="bug fixed" />
+    <MESSAGE value="test for matplotlib" />
+    <MESSAGE value="comments updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="comments updated" />
   </component>
 </project>
