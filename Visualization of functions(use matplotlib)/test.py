@@ -1,3 +1,9 @@
+'''
+书上的方法是 d2l 库里自己写的函数，其实也是用的 matplotlib 的 pyplot 这个模块
+但是我们不可能一直用 d2l 的库（其实一直用好像也不错）
+所以直接原始方法搞一个，虽然效果差
+'''
+
 import matplotlib.pyplot as plt
 import numpy as np
 from d2l import torch as d2l
