@@ -7,7 +7,7 @@ python 的 for 循环很慢
 
 import time
 import torch
-
+import numpy as np
 class Timer:
     """记录多次运行时间"""
     def __init__(self):
@@ -47,7 +47,7 @@ n 调小下面就直接小到五位小数无法表示了，所以我改成了保
 CPU : intel i7-12650H
 
 '''
-n = 1000000
+n = 100000
 a = torch.ones(n)
 b = torch.ones(n)
 c = torch.zeros(n)
