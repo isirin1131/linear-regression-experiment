@@ -1,6 +1,6 @@
 #### 什么是线性回归
 
-线性回归，即是用线性模型来做数值-数值预测，用于训练的数据长这样：$[(x_0,x_1,\cdots,x_k), y]$，简写成这样：$[\mathbb x, y]$,模型要实现的目的是经过这类型的数据训练后，对于同类型的数据，可以通过 $\mathbb x$ 来估计（或者说预测）$y$。
+线性回归，即是用线性模型来做数值-数值预测，用于训练的数据长这样：（$(x_0,x_1,\cdots,x_k), y$），简写成这样：（$\mathbb x, y$）,模型要实现的目的是经过这类型的数据训练后，对于同类型的数据，可以通过 $\mathbb x$ 来估计（或者说预测）$y$。
 
 线性回归的模型长这样：
 
@@ -23,3 +23,8 @@ $$
 首先要先对矩阵求导有个基本印象，这里可以看我写的 [矩阵求导 (isirin1131.github.io)](https://isirin1131.github.io/%E7%9F%A9%E9%98%B5%E6%B1%82%E5%AF%BC.html)。
 
 其次，我们不需要对完整的矩阵求导建立代数系统，而只需要对向量求导建立理论和得出并记住一些基本结果，这对理解线性回归这一节中的公式已经足够了。（其实是我搞不定更高的理论）
+
+**约定：依据分子布局，所有的向量都是列向量**
+
+**向量求导形如：** 对于向量 $\mathbb x$，其长度为 $n$，形如 $\{x_1,x_2,\cdots, x_n\}$，对于向量 $\mathbb y$，也就是 $\mathbb f(\mathbb x)$，其长度为 $m$，形如 $\{f_1(\mathbb x),f_2(\mathbb x),\cdots,f_m(\mathbb x)\}$，我们要求 $\dfrac{\partial}{\partial\mathbb x}\mathbb y$，得到的结果是个 $m\times n$ 的矩阵，并且如果 $\mathbb y\mathbb x^T$ 这个 $m\times n$ 矩阵的第 $(i,j)$ 项是 $f_i(\mathbb x)\mathbb x_j$，那么 $\dfrac{\partial}{\partial\mathbb x}\mathbb y$ 的第 $(i,j)$ 项就是 $\dfrac{\partial}{\partial x_j}f_i(\mathbb x)$。
+
