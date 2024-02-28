@@ -28,3 +28,13 @@ $$
 
 **向量求导形如：** 对于向量 $\mathbb x$，其长度为 $n$，形如 $\{x_1,x_2,\cdots, x_n\}$，对于向量 $\mathbb y$，也就是 $\mathbb f(\mathbb x)$，其长度为 $m$，形如 $\{f_1(\mathbb x),f_2(\mathbb x),\cdots,f_m(\mathbb x)\}$，我们要求 $\dfrac{\partial}{\partial\mathbb x}\mathbb y$，得到的结果是个 $m\times n$ 的矩阵，并且如果 $\mathbb y\mathbb x^T$ 这个 $m\times n$ 矩阵的第 $(i,j)$ 项是 $f_i(\mathbb x)\mathbb x_j$，那么 $\dfrac{\partial}{\partial\mathbb x}\mathbb y$ 的第 $(i,j)$ 项就是 $\dfrac{\partial}{\partial x_j}f_i(\mathbb x)$。
 
+**几个基础的例子：**
+
+1. $\dfrac{\partial}{\partial\mathbb x}\mathbb a$ 等于 $\mathbb 0$（$\mathbb a$ 是与 $\mathbb x$ 无关的常数向量，$\mathbb 0$ 是全零矩阵），这个很容易推
+2. $\dfrac{\partial}{\partial\mathbb x}\mathbb x$ 等于 $\mathbb 1$（$\mathbb 1$ 是一个对角线为 $1$，其余地方为 $0$ 的方阵），这个也比较容易推
+3. $\dfrac{\partial}{\partial\mathbb x}\mathbb A\mathbb x$ 等于 $\mathbb A$（$\mathbb A$ 是个列数为 $n$ 的矩阵，行数不做要求），这个稍微有点难，就稍微讲讲，首先 $\mathbb A\mathbb x$ 是个列向量，而且 $\mathbb A\mathbb x$ 的每个分量都是 $\mathbb A$ 的某个行向量与 $\mathbb x$ 的点积，往后就显然了
+4. $\dfrac{\partial}{\partial\mathbb x}\mathbb x^T\mathbb A$ 等于 $A^T$，这个跟上一个存在某种对应的关系，读者不需要管，硬推就行了。
+5. $\dfrac{\partial}{\partial\mathbb x}\mid \mathbb x\mid^2$ 等于 $2\mathbb x$（$\mid \mathbb x\mid^2$ 意思是向量长度的平方，数值上等于 $\sum_{i=1}^n (x_i)^2$，其实是个标量，但我们也可以把它当成向量处理），这个也比较显然
+
+**这向量求导的这些性质怎么这么像标量求导的那些性质？那既然如此，四则运算求导法则和链式求导法则也存在吗？** 
+
