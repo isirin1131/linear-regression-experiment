@@ -1,24 +1,8 @@
-#### 什么是线性回归
+写这篇是为了让读者能看懂原书的一条公式，关于那个公式原书略过了一些细节，对新手比较致命。
 
-线性回归，即是用线性模型来做数值-数值预测，用于训练的数据长这样：（$(x_0,x_1,\cdots,x_k), y$），简写成这样：（$\mathbb x, y$）,模型要实现的目的是经过这类型的数据训练后，对于同类型的数据，可以通过 $\mathbb x$ 来估计（或者说预测）$y$。
+那个公式就是线性回归的解析解，其实读者完全可以跳过那个解析解，当然进而也可以跳过本节这么一大坨，但……来测吧！
 
-线性回归的模型长这样：
-
-$$
-\hat y = w_0x_0+w_1x_1+\cdots+w_kx_k+b
-$$
-
-可以简写成（其实就是向量点积，只不过写成矩阵乘法的形式）：
-
-$$
-\hat y = \mathbb{w}^T\mathbb{x}+b
-$$
-
-模型的样子也就决定了它就算只能做数值-数值预测，但它发挥比较好的也就这类问题的某些子集。
-
-#### 预备知识：向量求导
-
-写这节是为了让读者能看懂后面的公式，原书略过了一些细节，对新手比较致命。
+这篇 theory 主要就是补充一下矩阵求导的细节，比如像一元微积分中对多项式求导的结论，可以加快计算的，再比如加法求导法则、链式求导法则之类的。
 
 首先要先对矩阵求导有个基本印象，这里可以看我写的 [矩阵求导 (isirin1131.github.io)](https://isirin1131.github.io/%E7%9F%A9%E9%98%B5%E6%B1%82%E5%AF%BC.html)。
 
@@ -34,7 +18,29 @@ $$
 2. $\dfrac{\partial}{\partial\mathbb x}\mathbb x$ 等于 $\mathbb 1$（$\mathbb 1$ 是一个对角线为 $1$，其余地方为 $0$ 的方阵），这个也比较容易推
 3. $\dfrac{\partial}{\partial\mathbb x}\mathbb A\mathbb x$ 等于 $\mathbb A$（$\mathbb A$ 是个列数为 $n$ 的矩阵，行数不做要求），这个稍微有点难，就稍微讲讲，首先 $\mathbb A\mathbb x$ 是个列向量，而且 $\mathbb A\mathbb x$ 的每个分量都是 $\mathbb A$ 的某个行向量与 $\mathbb x$ 的点积，往后就显然了
 4. $\dfrac{\partial}{\partial\mathbb x}\mathbb x^T\mathbb A$ 等于 $A^T$，这个跟上一个存在某种对应的关系，读者不需要管，硬推就行了。
-5. $\dfrac{\partial}{\partial\mathbb x}\mid \mathbb x\mid^2$ 等于 $2\mathbb x$（$\mid \mathbb x\mid^2$ 意思是向量长度的平方，数值上等于 $\sum_{i=1}^n (x_i)^2$，其实是个标量，但我们也可以把它当成向量处理），这个也比较显然
+5. $\dfrac{\partial}{\partial\mathbb x}\mathbb x^T\mathbb A\mathbb x$，这个稍微复杂，首先 $\mathbb x^T\mathbb A\mathbb x$ 是个标量，具体地，形如 $\mathbb x^T\mathbb a_1x_1+\mathbb x^T\mathbb a_2x_2+\cdots+\mathbb x^T\mathbb a_nx_n$（$\mathbb a_{i}$ 是列向量），然后 $\dfrac{\partial}{\partial\mathbb x}\mathbb x^T\mathbb A\mathbb x$ 就是行向量，但有点复杂，比如它第一项是 $\mathbb x^T\mathbb a_1+a_{1,1}x_1+a_{2,1}x_2+\cdots+a_{n,1}x_1$，第二项是 $\mathbb x^T\mathbb a_2+a_{1,2}x_2+a_{2,2}x_2+\cdots+a_{n,2}x_2$，到这个地步我们也能看出来了，$\dfrac{\partial}{\partial\mathbb x}\mathbb x^T\mathbb A\mathbb x$ 等于 $\mathbb x^T(\mathbb A+\mathbb A^T)$
+6. $\dfrac{\partial}{\partial\mathbb x}\mid \mathbb x\mid^2$ 等于 $2\mathbb x^T$（$\mid \mathbb x\mid^2$ 意思是向量长度的平方，数值上等于 $\sum_{i=1}^n (x_i)^2$，其实是个标量，但我们也可以把它当成向量处理），这个比较显然
 
 **这向量求导的这些性质怎么这么像标量求导的那些性质？那既然如此，四则运算求导法则和链式求导法则也存在吗？** 
 
+存在。
+
+首先，$\dfrac{\partial}{\partial\mathbb x}\alpha\mathbb y=\alpha\dfrac{\partial}{\partial\mathbb x}\mathbb y$ ，其中 $\alpha$ 是标量，这个很好验证；$\dfrac{\partial}{\partial\mathbb x}\mathbb A\mathbb y=\mathbb A\dfrac{\partial}{\partial\mathbb x}\mathbb y$(其中 $\mathbb A$ 是个列数为 $m$ 的矩阵，行数不做要求)，这个看着复杂，实际上一推就有。
+
+其次，$\dfrac{\partial}{\partial\mathbb x}(\mathbb u+\mathbb v)=\dfrac{\partial}{\partial\mathbb x}\mathbb u+\dfrac{\partial}{\partial\mathbb x}\mathbb v$，其中 $\mathbb u,\mathbb v$ 都长为 $m$，形如 $\{f_1(\mathbb x),f_2(\mathbb x),\cdots,f_m(\mathbb x)\}$。这个也是一推就有。
+
+乘法法则没有,不会推（
+
+（ps：其实更弱的情况，比如标量对向量求导，是可以有乘法法则的，但这里没有。）
+
+最后，链式法则也是成立的，也就是 $\dfrac{\partial}{\partial\mathbb x}\mathbb y=\dfrac{\partial}{\partial\mathbb u}\mathbb y\dfrac{\partial}{\partial\mathbb x}\mathbb u$
+
+证明这个挺简单，矩阵乘一下就明白了，但是要先知道一个理论（不然证不了），也就是原书里提到过的“多变量函数的链式法则”，如下：
+
+> 让我们先考虑单变量函数。假设函数$y=f(u)$和$u=g(x)$都是可微的，根据链式法则：$\frac{dy}{dx} = \frac{dy}{du} \frac{du}{dx}.$现在考虑一个更一般的场景，即函数具有任意数量的变量的情况。假设可微分函数$y$有变量$u_1, u_2, \ldots, u_m$，其中每个可微分函数$u_i$都有变量$x_1, x_2, \ldots, x_n$。注意，$y$是$x_1, x_2， \ldots, x_n$的函数。对于任意$i = 1, 2, \ldots, n$，链式法则给出：$\frac{\partial y}{\partial x_i} = \frac{\partial y}{\partial u_1} \frac{\partial u_1}{\partial x_i} + \frac{\partial y}{\partial u_2} \frac{\partial u_2}{\partial x_i} + \cdots + \frac{\partial y}{\partial u_m} \frac{\partial u_m}{\partial x_i}$
+
+唉，这个多变量函数的链式法则实际上是多变量微积分的内容，我不会证，读者自己了解吧。
+
+我们主要关注的还是向量求导的链式法则。
+
+完结，不写了！
