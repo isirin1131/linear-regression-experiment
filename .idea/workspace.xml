@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9efea0b-5bbf-4a51-9a32-273264b8c7c8" name="Changes" comment="updated">
+    <list default="true" id="b9efea0b-5bbf-4a51-9a32-273264b8c7c8" name="Changes" comment="theory ended">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theory.md" beforeDir="false" afterPath="$PROJECT_DIR$/theory.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709128422559</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="theory ended">
+      <option name="closed" value="true" />
+      <created>1709202078034</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709202078034</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -208,6 +217,7 @@
     <MESSAGE value="modifyed/added something on theory.md" />
     <MESSAGE value="fixed" />
     <MESSAGE value="updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated" />
+    <MESSAGE value="theory ended" />
+    <option name="LAST_COMMIT_MESSAGE" value="theory ended" />
   </component>
 </project>
