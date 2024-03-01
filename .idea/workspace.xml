@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9efea0b-5bbf-4a51-9a32-273264b8c7c8" name="Changes" comment="theory ended">
+    <list default="true" id="b9efea0b-5bbf-4a51-9a32-273264b8c7c8" name="Changes" comment="added theory.pdf, fuck github">
+      <change afterPath="$PROJECT_DIR$/let's sampling(torch-distributions)/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theory-likehood.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theory.md" beforeDir="false" afterPath="$PROJECT_DIR$/theory.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +73,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\newDLprj\linear-regression-experiment" />
       <recent name="D:\newDLprj\linear-regression-experiment\who is faster" />
     </key>
   </component>
@@ -203,8 +205,27 @@
       <option name="project" value="LOCAL" />
       <updated>1709202078034</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added theory.pdf, fuck github">
+      <option name="closed" value="true" />
+      <created>1709202443554</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709202443554</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="just create prj" />
@@ -218,6 +239,7 @@
     <MESSAGE value="fixed" />
     <MESSAGE value="updated" />
     <MESSAGE value="theory ended" />
-    <option name="LAST_COMMIT_MESSAGE" value="theory ended" />
+    <MESSAGE value="added theory.pdf, fuck github" />
+    <option name="LAST_COMMIT_MESSAGE" value="added theory.pdf, fuck github" />
   </component>
 </project>
