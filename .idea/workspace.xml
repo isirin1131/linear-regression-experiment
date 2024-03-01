@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9efea0b-5bbf-4a51-9a32-273264b8c7c8" name="Changes" comment="added theory.pdf, fuck github">
-      <change afterPath="$PROJECT_DIR$/let's sampling(torch-distributions)/test.py" afterDir="false" />
+    <list default="true" id="b9efea0b-5bbf-4a51-9a32-273264b8c7c8" name="Changes" comment="整了点各种分布里的采样实验">
       <change afterPath="$PROJECT_DIR$/theory-likehood.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -213,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709202443554</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="整了点各种分布里的采样实验">
+      <option name="closed" value="true" />
+      <created>1709285039273</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1709285039273</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,6 +247,7 @@
     <MESSAGE value="updated" />
     <MESSAGE value="theory ended" />
     <MESSAGE value="added theory.pdf, fuck github" />
-    <option name="LAST_COMMIT_MESSAGE" value="added theory.pdf, fuck github" />
+    <MESSAGE value="整了点各种分布里的采样实验" />
+    <option name="LAST_COMMIT_MESSAGE" value="整了点各种分布里的采样实验" />
   </component>
 </project>
