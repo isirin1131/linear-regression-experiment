@@ -1,4 +1,4 @@
-### 更新中
+### 目录
 
 `theory.pdf` 是矩阵求导相关理论，源码在 `theory.md`
 
@@ -12,4 +12,6 @@
 
 `[main code]heavy version` 是线性回归的从零开始实现
 
-待更新的内容是线性回归的简洁实现。
+`[main code]heavy version` 是线性回归的简洁实现
+
+更新完毕
