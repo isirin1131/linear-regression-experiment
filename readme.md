@@ -2,7 +2,7 @@
 
 `theory.pdf` 是矩阵求导相关理论，源码在 `theory.md`
 
-`theory-likehood.pdf` 是似然相关理论，源码在 `theory-likehood.pdf`
+`theory-likehood.pdf` 是似然相关理论，源码在 `theory-likehood.md`
 
 `who is faster` 是书上的实验，主要是说明 `python` 自己的循环开销真的很大
 

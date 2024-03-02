@@ -83,6 +83,6 @@ for epoch in range(train_epochs) :
 
     with torch.no_grad() :
         now_model_loss = loss(linear_model(data_X, model_w, model_b), data_y)
-    print("epoch : ", epoch + 1, ", loss : ", now_model_loss.sum())
+        print("epoch : ", epoch + 1, ", loss : ", now_model_loss.sum())
 
 print("model_w : ", model_w, ", model_b : ", model_b)
