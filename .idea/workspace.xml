@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9efea0b-5bbf-4a51-9a32-273264b8c7c8" name="Changes" comment="更新了似然理论">
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+    <list default="true" id="b9efea0b-5bbf-4a51-9a32-273264b8c7c8" name="Changes" comment="加了 readme.md">
+      <change afterPath="$PROJECT_DIR$/[main code]fresh version/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/[main code]heavy version/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +52,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -228,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709304019670</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="加了 readme.md">
+      <option name="closed" value="true" />
+      <created>1709363274645</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1709363274645</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,6 +270,7 @@
     <MESSAGE value="added theory.pdf, fuck github" />
     <MESSAGE value="整了点各种分布里的采样实验" />
     <MESSAGE value="更新了似然理论" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新了似然理论" />
+    <MESSAGE value="加了 readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="加了 readme.md" />
   </component>
 </project>
